@@ -1,0 +1,500 @@
+html {
+  background: linear-gradient(var(--white), var(--white2)); }
+
+body {
+  font-family: 'Montserrat', sans-serif;
+  color: var(--gray3);
+  padding: 0;
+  text-align: center;
+  font-size: 14px;
+}
+
+header,footer,section.even{
+  color: var(--white)
+}
+
+h3{
+  font-size: 2rem;
+}
+
+h2, h3, h4 {
+  letter-spacing: 0.3rem;
+  color: black;
+}
+
+h1, h3 {
+  text-transform: uppercase;
+  color: black;
+}
+
+h4 {
+  font-size: 1.5rem;
+}
+
+:root {
+  --primary: hsl(190, 68%, 53%);
+  --primary-dark: hsl(190, 68%, 50%);
+  --secondary: hsl(190, 68%, 50%);
+  --secondary-dark: hsl(25, 99%, 60%);
+  --white: #f5f9fa;
+  --white2: #ebf3f5;
+  --gray: #e1e4e5;
+  --gray2: #c0c6c9;
+  --gray3: #4b4c4d;
+  --black: #323333;
+  --black2: #2a2b2b;
+}
+
+.circle{
+  border-radius: 50%;
+  width: 100px;
+}
+
+.circle1{
+  border-radius: 50%;
+  width: 30px;
+}
+
+img{
+  font-size: 1rem;
+  border-radius: 10%;
+}
+
+
+section{
+  padding-top: 3rem;
+  padding-bottom: 3rem;
+}
+
+#navbar, section.even {
+  background: linear-gradient(var(--primary), var(--primary-dark));
+}
+
+footer{
+  background: linear-gradient(var(--black), var(--black2));
+  padding: 2rem 0;
+}
+
+hr {
+  height: 0.1rem;
+  max-width: 100%;
+  border: 0;
+  background-image: linear-gradient(to right, rgba(0,0,0,0), var(--primary), rgba(0,0,0,0));
+}
+
+section.even hr {
+  background-image: linear-gradient(to right, rgba(0,0,0,0), var(--white), rgba(0,0,0,0));
+}
+
+section hr {
+  margin-bottom: 5rem;
+}
+
+header{
+  padding: 5rem 0 3rem;
+  position: relative;
+  overflow: hidden;
+  background: linear-gradient(black), var(black);
+}
+
+header video {
+  position:absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  min-width: 100%;
+  min-height: 100%;
+  opacity: 0.2;
+}
+
+#navbar {
+  box-shadow: 0px 0px 10px 1px var(--gray3);}
+
+/*#navbar div {
+  display: flex;
+  justify-content: space-between;}
+
+#navbar div a {
+  padding: 1rem;
+  display: flex;
+  align-items: center;
+  text-decoration: none;
+  color: var(--black);
+  }
+
+#navbar div a:hover {  
+  color: var(--white);
+  transition: color .3s ease, color .3s ease;
+}
+
+#navbar div img {
+  margin-right: .5rem;
+}
+
+#navbar button{
+  background-color: transparent;
+  color: var(--white);
+  font-size: 1.5rem;
+  padding: .2rem .7rem;
+  margin: .7rem;
+  border: none;
+  border-radius: 2rem;
+  cursor: pointer;
+}
+
+#navbar.open button{  
+  background-color: var(--black);
+  color:  var(--white);
+  border-radius: 2rem;
+ 
+}
+
+#navbar ul {
+  background: linear-gradient(var(--primary), var(--secondary));
+  border-top: 1px solid rgba(255, 255, 255, 0.1);
+  padding: 0;
+  margin: 0;
+  max-height: 0;//
+  transition: max-height .3s ease;
+  position: absolute;
+  width: 100%;
+  overflow: hidden;
+}
+
+#navbar.open ul{
+  max-height: 150px;
+}
+
+#navbar li{
+  list-style: none;
+  padding: 0;
+}
+
+#navbar ul a{
+  display: block;
+  padding: 10px 15px;
+  text-decoration: none;
+  color: var(--white);
+  transition: color .3s ease, background-color .3s ease;
+}
+
+#navbar ul a:hover, 
+#navbar ul a:focus{
+  color: var(--black);
+  background-color: var(--white);
+}*/
+
+/*.navbar-fixed{
+  position: fixed;
+  width: 100%;
+  top: 0;
+  z-index: 100;
+}*/
+
+#portafolio button {
+  display: block;
+  position: relative;
+  margin: 2rem auto;
+  overflow: hidden;
+  box-shadow: 0 0 10px var(--gray2);
+  padding: 0;
+  border: none;
+  cursor: zoom-in;
+  border-radius: 10%;
+}
+
+#portafolio img{
+  display: block;
+  max-height: 250px;
+  transition: transform ease .3s;
+}
+
+#portafolio button:hover img {
+  transform: scale(1.25);
+}
+
+#portafolio h4{
+  display: block;
+  margin: 0;
+  position: absolute;
+  z-index: 2;
+  bottom: 0%;
+  left: 50%;
+  transform: translate(-50%, 50%);
+  color: var(--white);
+  opacity: 0;
+  transition: bottom ease .3s, opacity ease .3s;
+}
+
+#portafolio button:hover h4{
+  bottom: 20%;
+  opacity: 1;
+}
+
+#habilidades div {
+  display: grid;
+  grid-template-columns: .5fr .5fr .5fr .5fr;
+  margin: 6rem;
+  padding: 0;
+}
+
+#habilidades img{
+  border-radius: 1rem;
+  max-width: 8rem;
+  cursor: context-menu;
+  
+}
+
+#habilidades div > div {
+  position: relative;
+}
+
+#habilidades span {
+  width: 250px;
+  background-color: rgba(0,0,0,0.75);
+  text-align: center;
+  padding: .5rem 0;
+  border-radius: 0.5rem;
+  position: absolute;
+  z-index: 1;
+  top: -40px;
+  left: 3%;
+  transform: translate(-60px, 10px);
+  opacity: 0;
+  transition: opacity 0.5s ease, transform 0.3s ease;
+  pointer-events: none;
+  color: white;
+}
+
+#habilidades div > div:hover span {
+  opacity: 1;
+  transform: translate(-60px, 0px);
+}
+
+#habilidades span:after {
+  content: "";
+  position: absolute;
+  top: 100%;
+  left: 50%;
+  margin-left: -5px;
+  border-width: 5px;
+  border-style: solid;
+  border-color: rgba(0,0,0,0.75) transparent transparent transparent;
+}
+
+#experiencia img{
+  background: white;
+  width: 150px;
+  height: 150px;
+  padding: 2rem;
+  border: 4px solid var(--primary);
+  border-radius: 25px;
+  cursor: pointer;
+  transition: border-radius .3s ease, box-shadow .3s ease;
+}
+
+#experiencia img:hover {
+  border-radius: 0;
+  box-shadow: 0px 0px 10 px 1 px var(--gray2);
+}
+
+#experiencia h4{
+  font-size: 1rem;
+  margin-bottom: 3rem;
+}
+
+form{
+  font-size: 1.2rem;
+}
+
+form label {
+  display: block;
+  width: 50%;
+  margin: 0 auto;
+}
+
+input, textarea, input:focus, textarea:focus{
+  width: 100%;
+  padding: 1rem;
+  color: var(--black);
+  border: none;
+  background-color: rgba(0,0,0,0.1);
+  box-shadow: none;
+  cursor: pointer;
+  margin: 1rem 0 2rem;
+}
+
+textarea{
+  resize: none;
+}
+
+form button{
+  background-color: var(--secondary);
+  color: var(--white);
+  margin: 3rem;
+  border: none;
+  padding: 1rem;
+  border-radius: 15px;
+  cursor: pointer;
+  transition: background-color .3s ease;
+}
+
+form button:hover {
+  background-color: var(--secondary-dark);
+}
+
+#linkedin:hover {
+  background-color: blue;
+}
+
+#github{
+  background-color: black;
+}
+
+#whatsapp {
+  position: fixed;
+  bottom: 20px;
+  right:20px;
+  
+ }
+
+svg {
+width: 55px;
+filter: drop-shadow(0 1px 4px rgba(7, 238, 11, 0.4));
+color:#007912; } 
+
+
+li {
+  list-style: none;
+}
+
+a {
+  text-decoration: none;
+  color: var(--primary-dark);
+  font-size: 1.5rem;
+  
+}
+
+.navbar {
+  min-height: 40px;
+  display: flex;
+  justify-content: space-around;
+  align-items: center;
+  padding: 20px 20px;
+}
+
+.nav-menu {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  gap: 50px;
+}
+
+.nav-branding {
+  font-size: 5rem;
+}
+
+.nav-link {
+  transition: 0.7s ease;
+}
+
+.nav-link:hover{
+  color: var(--gray3);
+}
+
+.hamburger{
+  display: none;
+  cursor: pointer;
+}
+
+.bar{
+  display: block;
+  width: 25px;
+  height: 3px;
+  margin: 5px auto;
+  -webkit-transition: all 0.3s ease-in-out;
+  transition: all 0.3s ease-in-out;
+  background-color: var(--black2);
+}
+
+@media only screen and (max-width: 767px){
+  .hamburger{
+    display: block;
+
+  }
+  .hamburger.active .bar:nth-child(2){
+    opacity: 0;
+  }
+  .hamburger.active .bar:nth-child(1){
+    transform: translateY(8px) rotate(45deg);
+  }
+  .hamburger.active .bar:nth-child(3){
+    transform: translateY(-8px) rotate(-45deg);
+  }
+  .nav-menu{
+    position:absolute;
+    left: -100%;
+    top: 75px;
+    gap: 0;
+    flex-direction: column;
+    background-color: var(--black2);
+    width: 92%;
+    text-align: center;
+    transition: 0.3s;
+  }
+  .nav-item{
+    margin: 21px 0 6px 0;
+    
+  }
+  .nav-menu.active{
+    left: 0;
+    
+  }
+  .navbar {
+    min-height: 100%;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 10px 10px;
+  }
+  #habilidades div {
+    display: flex;
+    flex-direction: column;
+    margin: auto;  }
+  
+  #habilidades img{
+    border-radius: 1rem;
+    max-width: 8rem;
+    cursor: context-menu;
+    
+  }
+  
+  #habilidades div > div {
+    position: relative;
+  }
+  
+  .habilidades span {
+    width: 80px;
+    background-color: rgba(0,0,0,0.75);
+    text-align: center;
+    padding: .5rem 0;
+    border-radius: 0.5rem;
+    position: absolute;
+    z-index: 1;
+    top: -20px;
+    left: 10%;
+    transform: translate(-60px, 10px);
+    opacity: 0;
+    transition: opacity 0.5s ease, transform 0.3s ease;
+    pointer-events: none;
+    color: white;
+  }
+  
+  .habilidades div > div:hover span {
+    opacity: 1;
+    transform: translate(-60px, 0px);
+  }
+  
+  }
+
+
